@@ -2,8 +2,8 @@
 //  PTFakeTouch.h
 //  PTFakeTouch
 //
-//  Created by PugaTang on 16/4/20.
-//  Copyright © 2016年 PugaTang. All rights reserved.
+//  Created by In8 on 2018/3/24.
+//  Copyright © 2018年 In8. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

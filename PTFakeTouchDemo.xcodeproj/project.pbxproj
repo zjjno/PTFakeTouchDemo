@@ -13,9 +13,19 @@
 		DD7281F11FD2E12E0000ADCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7281F01FD2E12E0000ADCA /* Assets.xcassets */; };
 		DD7281F41FD2E12E0000ADCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7281F21FD2E12E0000ADCA /* LaunchScreen.storyboard */; };
 		DD7281F71FD2E12E0000ADCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7281F61FD2E12E0000ADCA /* main.m */; };
-		DD7281FE1FD2E1470000ADCA /* PTFakeTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7281FD1FD2E1470000ADCA /* PTFakeTouch.framework */; };
 		DD7282001FD2E3330000ADCA /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7281FF1FD2E3330000ADCA /* IOKit.framework */; };
+		DD99173A2066A23F00F75161 /* PTFakeTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9917382066A22D00F75161 /* PTFakeTouch.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD9917372066A22D00F75161 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD9917332066A22D00F75161 /* PTFakeTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD62637420669B81009C683D;
+			remoteInfo = PTFakeTouch;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DD7281E41FD2E12E0000ADCA /* PTFakeTouchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTFakeTouchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,8 +38,8 @@
 		DD7281F31FD2E12E0000ADCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD7281F51FD2E12E0000ADCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD7281F61FD2E12E0000ADCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DD7281FD1FD2E1470000ADCA /* PTFakeTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PTFakeTouch.framework; sourceTree = "<group>"; };
 		DD7281FF1FD2E3330000ADCA /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOKit.framework; sourceTree = "<group>"; };
+		DD9917332066A22D00F75161 /* PTFakeTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PTFakeTouch.xcodeproj; path = PTFakeTouch/PTFakeTouch.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD7281FE1FD2E1470000ADCA /* PTFakeTouch.framework in Frameworks */,
+				DD99173A2066A23F00F75161 /* PTFakeTouch.framework in Frameworks */,
 				DD7282001FD2E3330000ADCA /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +60,7 @@
 			children = (
 				DD7281E61FD2E12E0000ADCA /* PTFakeTouchDemo */,
 				DD7281E51FD2E12E0000ADCA /* Products */,
+				DD9917392066A23F00F75161 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				DD7281FF1FD2E3330000ADCA /* IOKit.framework */,
-				DD7281FD1FD2E1470000ADCA /* PTFakeTouch.framework */,
+				DD9917332066A22D00F75161 /* PTFakeTouch.xcodeproj */,
 				DD7281E71FD2E12E0000ADCA /* AppDelegate.h */,
 				DD7281E81FD2E12E0000ADCA /* AppDelegate.m */,
 				DD7281EA1FD2E12E0000ADCA /* ViewController.h */,
@@ -77,6 +88,21 @@
 				DD7281F61FD2E12E0000ADCA /* main.m */,
 			);
 			path = PTFakeTouchDemo;
+			sourceTree = "<group>";
+		};
+		DD9917342066A22D00F75161 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9917382066A22D00F75161 /* PTFakeTouch.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9917392066A23F00F75161 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,12 +151,28 @@
 			mainGroup = DD7281DB1FD2E12E0000ADCA;
 			productRefGroup = DD7281E51FD2E12E0000ADCA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DD9917342066A22D00F75161 /* Products */;
+					ProjectRef = DD9917332066A22D00F75161 /* PTFakeTouch.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DD7281E31FD2E12E0000ADCA /* PTFakeTouchDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DD9917382066A22D00F75161 /* PTFakeTouch.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PTFakeTouch.framework;
+			remoteRef = DD9917372066A22D00F75161 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DD7281E21FD2E12E0000ADCA /* Resources */ = {
